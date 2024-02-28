@@ -94,3 +94,27 @@ h2 {
 .tile:hover img { 
   opacity: 0; 
 }
+.content-wrapper {
+    display: flex; /* Enables side-by-side layout */
+    justify-content: space-around; /* Adds space around elements */
+}
+
+.did-you-know {
+    text-align: center;
+    width: 350px; /* Adjust the width of the fact section */
+    margin-top: 40px; /* Adjust spacing as needed */
+}
+
+#fact-text {
+    margin-bottom: 20px;
+}
+
+#next-fact { 
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em; 
+    cursor: pointer;
+}
