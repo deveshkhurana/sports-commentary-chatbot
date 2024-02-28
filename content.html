@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Commentary Chatbot - Content Page</title>
+    <title>Sports Commentary Chatbot: Content Page</title>
     <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
@@ -11,22 +11,55 @@
         <h1>Discover the Power of Our AI Chatbot</h1> 
     </header>
 
-    <section class="image-section">
-        <img src="image_4.jpg" alt="Sports Analysis" width="500">
-    </section>
+    <div class="content-wrapper">
+        <section class="image-section">
+            <img src="image_4.jpg" alt="Sports Analysis" width="500">
+        </section>
+
+        <section class="did-you-know">
+            <h2>Did You Know?</h2>
+            <p id="fact-text">A fun sports fact will appear here!</p> 
+            <button id="next-fact">Next Fact</button> 
+        </section>
+    </div>
 
     <section class="features">
         <h2>Key Features</h2>
         <ul> 
-           <li>In-Depth Analysis</li> 
-           <li>Personalized Experience</li>
-           <li>Real-Time Insights</li>
-           <li>Community Connection</li>
+            <li>In-Depth Analysis</li> 
+            <li>Personalized Experience</li>
+            <li>Real-Time Insights</li>
+            <li>Community Connection</li>
         </ul>
     </section>
 
     <footer>
         <p>&copy; 2023 Your Name or Project Name</p> 
     </footer>
+
+    <script>
+        const factText = document.getElementById('fact-text');
+        const nextFactButton = document.getElementById('next-fact');
+
+        const facts = [
+            "In basketball, the original baskets were peach baskets!", 
+            "The fastest recorded soccer goal was scored in 2.8 seconds.",
+            "American football was originally very similar to rugby.",
+            // ... Add more fun facts here!
+        ];
+
+        let currentFactIndex = 0; 
+
+        function displayFact() {
+            factText.textContent = facts[currentFactIndex];
+            currentFactIndex = (currentFactIndex + 1) % facts.length;  
+        }
+
+        // Initial display on page load
+        displayFact(); 
+
+        // Button click event
+        nextFactButton.addEventListener('click', displayFact); 
+    </script>
 </body>
 </html>
