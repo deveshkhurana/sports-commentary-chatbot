@@ -36,3 +36,37 @@ h2 {
     cursor: pointer;
     text-decoration: none; 
 }
+
+.main-content {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.call-to-action {
+    text-align: center; 
+}
+
+.interactive-image {
+    width: 350px; /* Adjust the width as needed */
+    transition: opacity 0.3s ease; 
+}
+
+.image-container:hover .interactive-image {
+    opacity: 0; 
+}
+
+.hover-text {
+    display: none;     
+    position: absolute; 
+    top: 50%;   
+    left: 50%;   
+    transform: translate(-50%, -50%);  
+    background-color: rgba(0,0,0,0.8); 
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.image-container:hover .hover-text {
+    display: block;    
+}
