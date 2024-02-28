@@ -97,12 +97,17 @@ h2 {
 .content-wrapper {
     display: flex; /* Enables side-by-side layout */
     justify-content: space-around; /* Adds space around elements */
+    align-items: flex-start;
 }
 
 .did-you-know {
     text-align: center;
     width: 350px; /* Adjust the width of the fact section */
     margin-top: 40px; /* Adjust spacing as needed */
+}
+
+.image-section {
+    margin-right: 30px; /* Add space between the image and the fact section */
 }
 
 #fact-text {
