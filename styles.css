@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4; 
-    color: #333; 
-    background-image: url("Image_2.jpg"); 
+    color: white; 
+    background-image: url("image_2.jpg"); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -13,7 +13,6 @@ body {
 header {
     text-align: center;
     background-color: #2980b9; 
-    color: white;
     padding: 30px 0; 
 }
 
