@@ -14,28 +14,37 @@
             <video width="400" controls autoplay loop muted>
                 <source src="Untitled_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>     
+            </video>   
         </div>
-        
-        <div class="image-container">  
-    <img src="interactive-soccer-image.jpg" alt="Interactive Soccer Image"> 
-    <div class="hover-text">
-        Arsenal vs Man City: Head to Head <br>
-        Arsenal: 10 <br>
-        Man City: 11 <br>
-        Draw: 5
-    </div> 
-</div>
-        
     </header>
 
-    <section class="call-to-action">
-        <h2>Ready for Deeper Insights?</h2>
-        <a href="content.html" class="button">Learn More</a> 
+    <section class="main-content"> 
+        <section class="call-to-action">
+            <h2>Ready for Deeper Insights?</h2>
+            <a href="content.html" class="button">Learn More</a> 
+        </section>
+
+        <div class="image-container">  
+            <img src="interactive-soccer-image.jpg" alt="Interactive Soccer Image" class="interactive-image"> 
+            <div class="hover-text">
+                Arsenal vs Man City: Head to Head <br>
+                Arsenal: 10 <br>
+                Man City: 11 <br>
+                Draw: 5
+            </div> 
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2023 Your Name or Project Name</p> 
-    </footer> 
+    </footer>
+
+    <script>
+        // Optional JavaScript for smoother fade effect 
+        const hoverTexts = document.querySelectorAll('.hover-text');
+        hoverTexts.forEach(text => {
+          text.style.transition = 'opacity 0.3s ease'; 
+        });
+    </script> 
 </body>
 </html>
